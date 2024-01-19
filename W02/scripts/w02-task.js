@@ -32,17 +32,21 @@ imageElement.setAttribute('src', profilePicture);
 let myFood = ["Cake", "Baleadas", "Pastelitos","Hamburguer","Tacos","Tortas","Enchiladas"];
 myFood.push('beefsteake');
 
+var miDiv = document.getElementById("food");
+
+  // set new values
+  miDiv.innerHTML = myFood.join(', '); 
+
 // delete first element
 myFood.shift();
 // delete last element
 myFood.pop();
 
-
+var miDiv2 = document.getElementById("food2");
   // get the value by ID
-  var miDiv = document.getElementById("food");
-
   // set new values
-  miDiv.innerHTML = myFood.join(', '); 
+miDiv2.innerHTML = myFood.join(', '); 
+  
 
 
 /*
