@@ -21,31 +21,38 @@ let imageElement = document.getElementById('im1');
 
 /* Step 4 - Adding Content */
 
-nameElement.innerHTML =`<strong>${fullname}</strong>`;
 
-yearElement.innerHTML =`<strong>${currentYear}</strong>`;
+/*
 
+*/
 imageElement.setAttribute('src', profilePicture);
+imageElement.setAttribute('src', profilePicture);
+
+var myName = "Cristiam Sanchez";  
+imageElement = document.getElementById("im1");
+imageElement.setAttribute("alt", `${myName}`);
 
 /* Step 5 - Array */
 
 let myFood = ["Cake", "Baleadas", "Pastelitos","Hamburguer","Tacos","Tortas","Enchiladas"];
+var miDiv = document.getElementById("food");
 myFood.push('beefsteake');
 
-var miDiv = document.getElementById("food");
 
   // set new values
-  miDiv.innerHTML = myFood.join(', '); 
+miDiv.innerHTML += `<br> ${myFood}`;
+//myFood.join(', '); 
+
 
 // delete first element
 myFood.shift();
+miDiv.innerHTML += `<br> ${myFood}`;
 // delete last element
 myFood.pop();
+miDiv.innerHTML += `<br> ${myFood}`;
 
-var miDiv2 = document.getElementById("food2");
   // get the value by ID
   // set new values
-miDiv2.innerHTML = myFood.join(', '); 
   
 
 
