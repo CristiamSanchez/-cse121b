@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Javascript Class</title>
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body id="body">
+
+<div class="card-container">
+  <div class="card" id="card1">
+    <!-- Contenido de la primera tarjeta -->
+<h2 id="Player1"></h2>
+
+<div class="image">
+  <img class="card-img-top"  id="image1">
+</div>
+
+
+<button class="my-button"  id="p1" onclick="enterName('1')"> Enter Player 1</button><br>
+<button class="my-button" style="display:none" id="w1" onclick="getW('1')"> Find a warrior</button>
+  </div>
+  <br>
+  <input type="reset" value="Reset" onclick="reset()"><br>
+  <div class="card" id="card2">
+  <h2 id="Player2"></h2>
+    <!-- Contenido de la segunda tarjeta -->
+  
+
+<div class="image">
+  <img class="card-img-top"  id="image2">
+</div>
+
+
+<button class="my-button" id="p2" onclick="enterName('2')"> Enter Player 2</button><br>
+<button class="my-button" style="display:none" id="w2" onclick="getW('2')"> Find a warrior</button>
+
+  </div>
+</div>
+
+<script src="JS/Main.js"></script>
+</body>
+</html>
